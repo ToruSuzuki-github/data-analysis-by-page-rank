@@ -10,4 +10,5 @@ data-analysis-by-page-rank
 </pre>
 ## version
 OS Ubuntu (WSL)
+
 OpenJDK "11.0.18"
