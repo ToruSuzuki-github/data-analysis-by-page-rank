@@ -735,7 +735,7 @@ class PageRankAlgorithm
 				
 				try
 				{
-					FileWriter fw = new FileWriter("C:\\soft\\jcpad\\Project1AResultDocument\\PageRankRanking.txt");
+					FileWriter fw = new FileWriter("./result/PageRankRanking.txt");
 					
 					rankingCount=0;
 					for(Entry<String, Double> entry : listScore)
@@ -796,7 +796,7 @@ class PageRankAlgorithm
 					}
 					try
 					{
-						FileWriter fw = new FileWriter("C:\\soft\\jcpad\\Project1AResultDocument\\PageRankRankingTop" + rankingNumber + ".txt");
+						FileWriter fw = new FileWriter("./result/PageRankRankingTop" + rankingNumber + ".txt");
 						
 						rankingCount=0;
 						for(Entry<String, Double> entry : listScore)
