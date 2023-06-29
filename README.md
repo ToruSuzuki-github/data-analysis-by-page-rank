@@ -6,6 +6,9 @@ data-analysis-by-page-rank
 |-PageRankMain.java: 分析を実行するプログラム
 |-README.md: このファイル
 </pre>
+## exe
+javac PageRankMaine.java
+java PageRankMaine <data file path>
 ## version
 OS Ubuntu (WSL)
 
