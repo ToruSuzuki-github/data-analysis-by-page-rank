@@ -9,7 +9,7 @@ data-analysis-by-page-rank
 ## exe
 javac PageRankMaine.java
 
-java PageRankMaine <data file path>
+java PageRankMaine \<data file path\>
 ## version
 OS Ubuntu (WSL)
 
