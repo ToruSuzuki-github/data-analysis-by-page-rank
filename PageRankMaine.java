@@ -73,12 +73,14 @@ class PageRankAlgorithm
 		hyperlinkRatioA = -1.00;
 		choiceQueue = "選択されていません。";
 	}
-	public void setTextDateFile() //スライドのデータをテキストファイルから入力するためのメソッド
+	public void setTextDateFile(String data_file_path)
+	//public void setTextDateFile()//スライドのデータをテキストファイルから入力するためのメソッド
 	{
 		try
 		{
 			//File file = new File("./data/sampledata.txt"); //頂点が6個の場合
-			File file = new File("./data/compound.txt"); //人体における代謝ネットワーク
+			//File file = new File("./data/compound.txt"); //人体における代謝ネットワーク
+			File file = new File(data_file_path);
 				
 			if(!file.exists())
 			{
@@ -846,7 +848,7 @@ class PageRankMaine
 		
 		//データの格納
 		//ex1.setDate();
-		ex1.setTextDateFile();
+		ex1.setTextDateFile(args[0]);
 		
 		//各頂点からのアウトリンク総数の算出
 		ex1.countOutRink();
